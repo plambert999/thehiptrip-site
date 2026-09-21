@@ -131,8 +131,8 @@ nav.main-nav a:hover { opacity: 1; color: var(--red-bright); }
 }
 .hero-inner { padding: 140px 24px 80px; }
 .hero img.hero-logo {
-  width: 220px;
-  max-width: 60vw;
+  width: 340px;
+  max-width: 68vw;
   margin: 0 auto 28px;
   filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6));
 }
