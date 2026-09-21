@@ -219,17 +219,21 @@
         </div>
       </div>
 
-      <form class="contact-form" id="contactForm">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/xppwdpld" method="POST">
         <input type="text" name="nom" placeholder="Nom / Name" data-lang="fr" required />
         <input type="text" name="nom" placeholder="Name" data-lang="en" required />
 
-        <input type="email" name="courriel" placeholder="Courriel" data-lang="fr" required />
-        <input type="email" name="courriel" placeholder="Email" data-lang="en" required />
+        <input type="email" name="_replyto" placeholder="Courriel" data-lang="fr" required />
+        <input type="email" name="_replyto" placeholder="Email" data-lang="en" required />
 
         <textarea name="message" placeholder="Message" required></textarea>
 
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" />
+
         <button type="submit" class="btn btn-primary" data-lang="fr">Envoyer</button>
         <button type="submit" class="btn btn-primary" data-lang="en">Send</button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>

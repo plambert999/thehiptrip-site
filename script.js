@@ -132,16 +132,58 @@
     if (e.key === "Escape") closeLightbox();
   });
 
-  /* ---------- Formulaire de contact (mailto) ---------- */
+  /* ---------- Formulaire de contact (Formspree) ---------- */
   const form = document.getElementById("contactForm");
+  const formStatus = document.getElementById("formStatus");
+  const STATUS_MSG = {
+    fr: {
+      ok: "Merci! Votre message a bien été envoyé.",
+      err: "Oups, l'envoi a échoué. Écrivez-nous à info@thehiptrip.ca."
+    },
+    en: {
+      ok: "Thank you! Your message has been sent.",
+      err: "Oops, something went wrong. Email us at info@thehiptrip.ca."
+    }
+  };
+
+  function syncFormFields(lang) {
+    // Les champs de la langue inactive sont désactivés : ils ne bloquent pas
+    // la validation (required) et ne sont pas envoyés en double.
+    form.querySelectorAll("[data-lang]").forEach(function (el) {
+      el.disabled = el.getAttribute("data-lang") !== lang;
+    });
+    formStatus.textContent = "";
+  }
+  syncFormFields(root.getAttribute("lang"));
+  document.getElementById("langToggle").addEventListener("click", function () {
+    syncFormFields(root.getAttribute("lang"));
+  });
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    const data = new FormData(form);
-    const nom = data.get("nom") || "";
-    const courriel = data.get("courriel") || "";
-    const message = data.get("message") || "";
-    const subject = encodeURIComponent("Message du site — " + nom);
-    const body = encodeURIComponent(message + "\n\n— " + nom + " (" + courriel + ")");
-    window.location.href = "mailto:info@thehiptrip.ca?subject=" + subject + "&body=" + body;
+    const lang = root.getAttribute("lang");
+    const buttons = form.querySelectorAll("button[type=submit]");
+    buttons.forEach(function (b) { b.disabled = true; });
+    formStatus.className = "form-status";
+    formStatus.textContent = "";
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        form.reset();
+        formStatus.classList.add("ok");
+        formStatus.textContent = STATUS_MSG[lang].ok;
+      })
+      .catch(function () {
+        formStatus.classList.add("err");
+        formStatus.textContent = STATUS_MSG[lang].err;
+      })
+      .finally(function () {
+        buttons.forEach(function (b) { b.disabled = false; });
+      });
   });
 })();
