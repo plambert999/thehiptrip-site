@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Hip Trip — Hommage à The Tragically Hip</title>
+<meta name="description" content="The Hip Trip, groupe hommage à The Tragically Hip. Spectacle énergique et professionnel pour bars, festivals et salles de spectacle. Spectacles à venir, vidéos, photos et contact." />
+
+<meta property="og:title" content="The Hip Trip — Hommage à The Tragically Hip" />
+<meta property="og:description" content="Groupe hommage à The Tragically Hip. Spectacle énergique et professionnel pour bars, festivals et salles de spectacle." />
+<meta property="og:image" content="images/og-image.jpg" />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="images/logo-512.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#accueil" class="brand">
+      <img src="images/logo.png" alt="The Hip Trip" />
+      <span>The Hip Trip</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#spectacles" data-lang="fr">Spectacles</a>
+      <a href="#spectacles" data-lang="en">Shows</a>
+
+      <a href="#videos" data-lang="fr">Vidéos</a>
+      <a href="#videos" data-lang="en">Videos</a>
+
+      <a href="#photos" data-lang="fr">Photos</a>
+      <a href="#photos" data-lang="en">Photos</a>
+
+      <a href="#groupe" data-lang="fr">Le groupe</a>
+      <a href="#groupe" data-lang="en">The Band</a>
+
+      <a href="#contact" data-lang="fr">Contact</a>
+      <a href="#contact" data-lang="en">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="lang-toggle" id="langToggle">
+        <button data-set-lang="fr">FR</button>
+        <button data-set-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="accueil">
+  <div class="hero-inner">
+    <img src="images/logo.png" alt="The Hip Trip" class="hero-logo" />
+    <p class="tagline" data-lang="fr">Hommage à The Tragically Hip</p>
+    <p class="tagline" data-lang="en">A Tribute to The Tragically Hip</p>
+    <p class="subtagline" data-lang="fr">Cinq gars, une gang de tounes, un show qui frappe fort.</p>
+    <p class="subtagline" data-lang="en">Five guys, a stack of songs, a show that hits hard.</p>
+    <div class="hero-ctas">
+      <a href="#spectacles" class="btn btn-primary" data-lang="fr">Prochains spectacles</a>
+      <a href="#spectacles" class="btn btn-primary" data-lang="en">Upcoming Shows</a>
+      <a href="#videos" class="btn btn-outline" data-lang="fr">Voir les vidéos</a>
+      <a href="#videos" class="btn btn-outline" data-lang="en">Watch Videos</a>
+    </div>
+  </div>
+</section>
+
+<section id="spectacles">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-lang="fr">Sur la route</span>
+      <span class="eyebrow" data-lang="en">On the Road</span>
+      <h2 data-lang="fr">Spectacles à venir</h2>
+      <h2 data-lang="en">Upcoming Shows</h2>
+    </div>
+    <div class="shows-list" id="showsList"></div>
+  </div>
+</section>
+
+<section id="videos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-lang="fr">Sur scène</span>
+      <span class="eyebrow" data-lang="en">Live</span>
+      <h2 data-lang="fr">Vidéos</h2>
+      <h2 data-lang="en">Videos</h2>
+      <p data-lang="fr">Quelques extraits de nos spectacles. D'autres s'en viennent.</p>
+      <p data-lang="en">A few clips from our shows. More coming soon.</p>
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+      <!-- Remplacer VIDEO_ID par l'identifiant de la vidéo YouTube (ce qui suit v= dans le lien) -->
+      <div>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="The Hip Trip — live" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption" data-lang="fr">À remplacer par un vrai extrait</p>
+        <p class="video-caption" data-lang="en">Placeholder — swap in a real clip</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="photos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-lang="fr">Galerie</span>
+      <span class="eyebrow" data-lang="en">Gallery</span>
+      <h2 data-lang="fr">Photos</h2>
+      <h2 data-lang="en">Photos</h2>
+    </div>
+    <div class="gallery" id="gallery">
+      <img src="images/gallery-thumb/photo-01.jpg" data-full="images/gallery-full/photo-01.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-02.jpg" data-full="images/gallery-full/photo-02.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-03.jpg" data-full="images/gallery-full/photo-03.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-04.jpg" data-full="images/gallery-full/photo-04.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-05.jpg" data-full="images/gallery-full/photo-05.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-06.jpg" data-full="images/gallery-full/photo-06.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-07.jpg" data-full="images/gallery-full/photo-07.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-08.jpg" data-full="images/gallery-full/photo-08.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-09.jpg" data-full="images/gallery-full/photo-09.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-10.jpg" data-full="images/gallery-full/photo-10.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-11.jpg" data-full="images/gallery-full/photo-11.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-12.jpg" data-full="images/gallery-full/photo-12.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-13.jpg" data-full="images/gallery-full/photo-13.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-14.jpg" data-full="images/gallery-full/photo-14.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-15.jpg" data-full="images/gallery-full/photo-15.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-16.jpg" data-full="images/gallery-full/photo-16.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-17.jpg" data-full="images/gallery-full/photo-17.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-18.jpg" data-full="images/gallery-full/photo-18.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-19.jpg" data-full="images/gallery-full/photo-19.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-20.jpg" data-full="images/gallery-full/photo-20.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+      <img src="images/gallery-thumb/photo-21.jpg" data-full="images/gallery-full/photo-21.jpg" alt="The Hip Trip en spectacle" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<section id="groupe" class="band-section container">
+  <img src="images/band.jpg" alt="The Hip Trip, portrait de groupe" />
+  <div class="band-copy">
+    <h2 data-lang="fr">Le groupe</h2>
+    <h2 data-lang="en">The Band</h2>
+    <p data-lang="fr">
+      The Hip Trip, un groupe hommage à The Tragically Hip offrant un spectacle
+      énergique et professionnel, parfaitement adapté aux bars, festivals et
+      salles de spectacle.
+    </p>
+    <p data-lang="fr">
+      Notre chanteur, François Lamontagne, cumule plus de 25 ans d'expérience
+      à interpréter le répertoire des Hip. Sa voix, sa présence sur scène et
+      son authenticité, combinées à un groupe de musiciens d'expérience,
+      recréent toute l'énergie des meilleurs concerts de The Tragically Hip.
+    </p>
+    <p data-lang="fr">
+      Notre répertoire comprend tous les grands classiques, dont
+      <em>Ahead by a Century</em>, <em>Bobcaygeon</em>,
+      <em>New Orleans Is Sinking</em>, <em>Blow at High Dough</em>,
+      <em>Courage</em> et plusieurs autres succès qui font chanter les foules.
+    </p>
+    <p data-lang="fr">
+      Entièrement autonomes sur le plan technique, nous avons participé à de
+      nombreux festivals et événements d'envergure, notamment à l'ouverture
+      du week-end du Grand Prix de Montréal 2025, en plus de nous produire
+      régulièrement dans les bars et les salles de spectacle.
+    </p>
+
+    <p data-lang="en">
+      The Hip Trip is a tribute band dedicated to The Tragically Hip,
+      delivering an energetic, professional show perfectly suited to bars,
+      festivals and concert venues.
+    </p>
+    <p data-lang="en">
+      Our singer, François Lamontagne, brings more than 25 years of
+      experience performing the Hip's catalogue. His voice, stage presence
+      and authenticity, combined with a band of seasoned musicians, recreate
+      all the energy of The Tragically Hip's best shows.
+    </p>
+    <p data-lang="en">
+      Our set list covers all the classics, including
+      <em>Ahead by a Century</em>, <em>Bobcaygeon</em>,
+      <em>New Orleans Is Sinking</em>, <em>Blow at High Dough</em>,
+      <em>Courage</em>, and many more crowd favourites.
+    </p>
+    <p data-lang="en">
+      Fully self-sufficient on the technical side, we've played numerous
+      major festivals and events — including the opening of the 2025
+      Montreal Grand Prix weekend — and we perform regularly in bars and
+      concert venues.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-lang="fr">Parlons-en</span>
+      <span class="eyebrow" data-lang="en">Get in Touch</span>
+      <h2 data-lang="fr">Contact</h2>
+      <h2 data-lang="en">Contact</h2>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="item">
+          <span class="label" data-lang="fr">Réservations</span>
+          <span class="label" data-lang="en">Bookings</span>
+          <a href="mailto:info@thehiptrip.ca">info@thehiptrip.ca</a>
+        </div>
+        <div class="item">
+          <span class="label" data-lang="fr">Réseaux sociaux</span>
+          <span class="label" data-lang="en">Social</span>
+          <div class="socials">
+            <a href="https://www.facebook.com/bandthehiptrip" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">FB</a>
+            <a href="https://www.instagram.com/the.hip.trip/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">IG</a>
+            <a href="#" aria-label="YouTube" title="YouTube">YT</a>
+          </div>
+          <div><em data-lang="fr">[YouTube à ajouter]</em><em data-lang="en">[YouTube to add]</em></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="nom" placeholder="Nom / Name" data-lang="fr" required />
+        <input type="text" name="nom" placeholder="Name" data-lang="en" required />
+
+        <input type="email" name="courriel" placeholder="Courriel" data-lang="fr" required />
+        <input type="email" name="courriel" placeholder="Email" data-lang="en" required />
+
+        <textarea name="message" placeholder="Message" required></textarea>
+
+        <button type="submit" class="btn btn-primary" data-lang="fr">Envoyer</button>
+        <button type="submit" class="btn btn-primary" data-lang="en">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> The Hip Trip</p>
+    <span class="photo-credit">Photos: Cyrille Farré · CE3R</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<script src="shows.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
