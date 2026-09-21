@@ -131,7 +131,7 @@ nav.main-nav a:hover { opacity: 1; color: var(--red-bright); }
 }
 .hero-cta-bar .subtagline {
   color: var(--text-muted);
-  font-size: 20px;
+  font-size: 28px;
   margin: 0 0 28px;
 }
 .hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
@@ -162,7 +162,7 @@ section { padding: 96px 0; border-bottom: 1px solid rgba(239,230,210,0.08); }
   color: var(--red-bright);
   font-family: "Anton", sans-serif;
   letter-spacing: 0.18em;
-  font-size: 14px;
+  font-size: 18px; /* agrandi-v2 */
   margin-bottom: 8px;
 }
 .section-head h2 { font-size: clamp(28px, 4vw, 44px); }
