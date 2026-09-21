@@ -15,6 +15,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  padding-top: 68px; /* compense la hauteur du header fixe pour ne pas cacher le haut du hero */
   background: var(--black);
   color: var(--cream);
   font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
