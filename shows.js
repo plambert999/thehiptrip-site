@@ -1,6 +1,9 @@
 /*
-  LISTE DES SPECTACLES — The Hip Trip
-  ====================================
+  COPIE DE SECOURS DES SPECTACLES — The Hip Trip
+  ===============================================
+  La liste à jour se gère dans la feuille Google Sheets (voir SHOWS_CSV_URL
+  dans script.js). Ce fichier ne sert que si la feuille est inaccessible.
+
   Pour ajouter un spectacle, copie un bloc { ... } ci-dessous, colle-le
   juste avant "];" et remplis tes informations. Pour en retirer un,
   supprime son bloc au complet (ou mets "hidden: true" pour le cacher
