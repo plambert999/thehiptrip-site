@@ -118,7 +118,6 @@ nav.main-nav a:hover { opacity: 1; color: var(--red-bright); }
   position: relative;
   width: 100%;
   height: 56.25vw; /* exact 16:9 match to the photo — nothing ever gets cropped */
-  max-height: 1080px;
   min-height: 340px;
   background: url("images/hero.jpg") center center / cover no-repeat;
 }
