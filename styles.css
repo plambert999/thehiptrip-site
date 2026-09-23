@@ -378,5 +378,5 @@ html[lang="en"] span[data-lang="en"] { display: inline !important; }
   .show-date { border-right: none; padding-right: 0; display: flex; gap: 10px; align-items: baseline; text-align: left; }
   .show-actions { text-align: left; }
   .gallery { columns: 2 200px; }
-  .hero { height: min(80vh, 125vw); min-height: 420px; }
+  .hero { height: min(80vh, 125vw); min-height: 420px; background-size: contain; }
 }
