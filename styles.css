@@ -374,9 +374,22 @@ html[lang="en"] span[data-lang="en"] { display: inline !important; }
   }
   nav.main-nav.open { transform: translateY(0); }
   .nav-toggle { display: block; }
-  .show-card { grid-template-columns: 1fr; text-align: left; }
+  .show-card { text-align: left; padding: 16px 18px; gap: 10px 16px; }
   .show-date { border-right: none; padding-right: 0; display: flex; gap: 10px; align-items: baseline; text-align: left; }
-  .show-actions { text-align: left; }
+  .show-info { flex-basis: 100%; }
+  .show-actions {
+    flex-basis: 100%;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 16px;
+    text-align: left;
+    white-space: normal;
+  }
+  .show-actions .price { grid-column: 1; margin-bottom: 0; }
+  .show-actions .price-door { grid-column: 1; margin: 0; }
+  .show-actions .btn { grid-column: 2; grid-row: 1 / -1; }
   .gallery { columns: 2 200px; }
   .hero { height: min(80vh, 70vw); min-height: 240px; }
 }
