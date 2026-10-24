@@ -179,12 +179,21 @@ section { padding: 96px 0; border-bottom: 1px solid rgba(239,230,210,0.08); }
 }
 .shows-notice {
   max-width: 860px; margin: 0 auto 20px;
-  padding: 14px 18px;
-  border-left: 4px solid var(--red);
-  background: var(--near-black);
+  padding: 18px 22px;
+  border: 3px solid var(--red-bright);
+  border-radius: 6px;
+  background: var(--burgundy);
   color: var(--cream);
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.45;
+}
+.shows-notice-label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "Anton", sans-serif;
+  font-size: clamp(28px, 4vw, 38px);
+  letter-spacing: 0.06em;
+  color: #fff;
 }
 
 .show-card {
