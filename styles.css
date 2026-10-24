@@ -177,6 +177,15 @@ section { padding: 96px 0; border-bottom: 1px solid rgba(239,230,210,0.08); }
   letter-spacing: 0.04em;
   color: var(--cream);
 }
+.shows-notice {
+  max-width: 860px; margin: 0 auto 20px;
+  padding: 14px 18px;
+  border-left: 4px solid var(--red);
+  background: var(--near-black);
+  color: var(--cream);
+  font-size: 17px;
+  line-height: 1.45;
+}
 
 .show-card {
   display: flex;
